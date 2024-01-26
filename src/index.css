@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-container {
+    @apply py-4 px-6 md:px-10;
+  }
+  .navbar {
+    @apply shadow flex items-center  gap-6 justify-between
+          bg-white dark:bg-black border-b-[1px] 
+          border-b-[#f1f1f1] dark:border-b-[#272828]
+          fixed w-full top-0 left-0 z-20;
+  }
+  .btn {
+    @apply w-[40px] h-[40px] rounded-full bg-[#f1f1f1]
+    hover:shadow-md dark:bg-[#272828] text-black dark:text-white;
+  }
+  .tab-btn {
+    @apply text-sm md:text-lg 
+    dark:hover:bg-[rgb(39,40,40)] px-6 py-3 w-[140px] transition 
+    duration-300 bg-white hover:bg-[#f1f1f1] 
+    dark:bg-black mt-4 rounded-lg
+    shadow border-[1px] border-[#f1f1f1] dark:border-[rgb(39,40,40)]
+    flex gap-2 items-center justify-center;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #333;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(59 130 246);
+  border-radius: 10px;
+}
